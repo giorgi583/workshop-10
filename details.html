@@ -13,21 +13,31 @@
 <body>
 <!-- header -->
  <header>
-<div class="header">
-    <div class="logo"><img src="./images/icon/Logo.png" alt="Latana logo"></div>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Our story</a></li>
-        </ul>
-    </nav>
-    <button class="login">Log in</button>
-    <div class="menu">
-        <img src="./images/icon/Menu icon.png" alt="menu icon">
-    </div>
-</div>
+        <div class="headerrr">
+        <div class="header">
+            <div class="logo"><img src="./images/icon/Logo.png" alt="Latana logo"></div>
+            
+            <label for="header_nav"><div class="menu">
+                <img src="./images/icon/Menu icon.png" alt="menu icon">
+            </div>
+            </label>
+            
+            </div>
+            <input type="checkbox" id="header_nav" class="hidden">
+            <input type="checkbox" id="close" class="hidden">
+            <nav aria-label="header_nav">
+                <label for="close">
+                <div class="closeicon"><img src="./images/icon/Close icon.png" alt=""></div>
+            </label>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Our story</a></li>
+                </ul>
+            </nav>
+            <button class="login">Log in</button>
+        </div>
     </header>
 </body>
 

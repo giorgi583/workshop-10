@@ -7,12 +7,13 @@
   --scroller: #ededed;
   --date: rgba(0, 0, 0, 0.5);
   --border: #c3bfbf;
-  --cardborder: #E7E7E7;
+  --cardborder: #e7e7e7;
   --box-shadow: rgba(0, 0, 0, 0.25);
 }
 body {
   font-family: "Raleway", sans-serif;
 }
+
 header {
   padding: 24px 40px;
 }
@@ -26,18 +27,61 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 24px;
 }
 ul {
   display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.headerrr {
+  margin: auto;
 }
 .login {
   display: none;
+  background-color: var(--purple);
+  border-radius: 8px;
+  padding: 8px 66px;
+  color: var(--white);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  border: none;
 }
-nav {
+.header_navv {
   display: none;
+  padding: 40px 0;
+  background-color: var(--purple);
+  position: relative;
+  max-width: 768px;
+  margin: auto;
+  border-radius: 16px;
+  justify-content: center;
+}
+.header_navv a {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: bold;
+  color: var(--white);
+}
+.closeicon {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+label:hover {
+  cursor: pointer;
 }
 .menu {
   width: 47px;
+}
+
+#header_nav:checked ~ .header_navv {
+  display: flex;
+}
+main {
+  display: flex;
+  flex-direction: column;
 }
 /* section 1 */
 .section_1 {
@@ -140,6 +184,7 @@ time {
   border: 1px solid var(--cardborder);
   border-radius: 16px;
   box-shadow: 0 4px 4px var(--box-shadow);
+  margin: auto;
 }
 .card__img {
   max-width: 248px;
@@ -224,7 +269,9 @@ time {
   text-decoration: underline;
   margin-top: 8px;
 }
-
+.a {
+  color: var(--purple);
+}
 .cardshidden {
   display: none;
 }
@@ -242,6 +289,168 @@ time {
   padding-top: 77px;
   padding-bottom: 64px;
 }
-.d-block, .carousel-inner {
+.d-block,
+.carousel-inner {
   border-radius: 16px;
+}
+/* section 4 */
+.s4_rm {
+  margin-top: 40px;
+}
+.section_4 {
+  padding-bottom: 64px;
+}
+.s4_ttl {
+  margin-bottom: 40px;
+}
+/* section5 */
+.section_5 {
+  display: none;
+}
+.pagination {
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  margin: auto;
+}
+.page-link {
+  font-size: 12px;
+  font-weight: bold;
+}
+.pagin {
+  margin: auto;
+  padding-top: 88px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: center;
+}
+.page-item a {
+  color: var(--purple);
+}
+
+.active .page-link {
+  background-color: var(--purple);
+}
+/* footer */
+.footer {
+  background-color: var(--black);
+  padding: 40px 76px;
+  border-radius: 16px 16px 0 0;
+}
+.footer_content {
+  display: flex;
+  color: var(--white);
+  gap: 64.31px;
+}
+.socials {
+  display: flex;
+  gap: 16px;
+}
+.footer_inp {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  border-bottom: 2px solid var(--border);
+  padding-right: 6px;
+  padding-bottom: 8px;
+}
+.inp {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--white);
+  font-size: 12px;
+  line-height: 20px;
+}
+.comejoinus {
+  max-width: 160.78px;
+}
+footer h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+}
+footer p {
+  font-size: 14px;
+  line-height: 20px;
+}
+.socials div {
+  width: 32px;
+} 
+@media (min-width: 1440px) {
+  label {
+    display: none;
+  }
+  .header_navv {
+    display: flex;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+  }
+  ul {
+    flex-direction: row;
+    gap: 22;
+    margin: 0;
+  }
+  .header_navv a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 100%;
+    color: var(--black);
+  }
+  .login {
+    display: flex;
+  }
+  .headerrr {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    justify-content: space-between;
+    height: auto;
+  }
+  .header {
+    margin: 0;
+  }
+  header {
+    padding: 42px 120px;
+  }
+  .section_1 {
+    display: none;
+  }
+  .section_3 {
+    padding: 44px 89px 124px 151px;
+    order: 1;
+  }
+  .container {
+    max-width: 1440px;
+  }
+  .scroller {
+    width: 1200px;
+    padding: 65px 40px;
+  }
+  .carousel-inner {
+    max-height: 400px;
+  }
+  .section_2 {
+    order: 2;
+  }
+  .cardshidden {
+    display: flex;
+  }
+  .section_5 {
+    display: flex;
+  }
+  .section_4 {
+    display: none;
+  }
+  .read_more {
+    display: none;
+  }
+  .s2_ttl {
+    font-size: 40px;
+    line-height: 56px;
+    margin-bottom: 38px;
+    margin-left: 162px;
+  }
 }
